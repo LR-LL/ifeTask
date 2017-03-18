@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>task1_4</title>
+  <style>
+  * {
+    padding: 0;
+  }
+  .graymain{
+    position: absolute;
+    background: #ccc;
+    height: 200px;
+    width: 400px;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+  .child{
+    background: #fc0;
+  }
+  .yellowlefttop{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 0  50px  0 ;
+  }
+  .yellowrighttop{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius:50px  0  0  0 ;
+  }
+  </style>
+</head>
+<body>
+  <div class="graymain">
+    <div class="yellowlefttop child"></div>
+    <div class="yellowrighttop child"></div>
+  </div>
+
+</body>
+</html>

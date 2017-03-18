@@ -1,226 +1,287 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<title>task_1_1</title>
-<style type="text/css">
-#navigation{
-background:#000;
-position:absolute;left:0px;top:0px;width:100%;
-}
-#navigation>table{float:right;}
-#navigation>ul{
-list-style:none;margin:0;padding:0;
-}
-#navigation li{
-float:left;display:inline;margin-right:24px;
-}
-#navigation a{color:white;text-decoration:none;font-size:small;}
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>task_1_2</title>
+    <style type="text/css">
+        #navigation {
+            background: #000;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
 
-#article1{
-background:white;margin-top:85px;margin-left:12px;margin-right:12px;border:1px solid white;border-bottom:3px solid #8e8e8e;
-}
-#article1-content,#article2-content,#images-content,#last-article-content,#last-section-content{
-margin:30px 20px;
-}
+        #navigation>table {
+            float: right;
+        }
 
-#article2,#images,#last-article,#last-section{
-background:white;margin-top:20px;margin-left:12px;margin-right:12px;border:1px solid white;border-bottom:3px solid #8e8e8e;
-}
+        #navigation>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.image{
-height:120px;width:120px;border:#ccc solid 2px;
-text-align:center;margin-bottom:15px;margin-left:34px;
-}
-.image img{
-width:100px;
-}
-.image p{
-font-size:small;line-height:0.8em;
-}
+        #navigation li {
+            float: left;
+            display: inline;
+            margin-right: 24px;
+        }
 
-.table-bottom{width:100%;}
-.table-bottom th{
-background:#000;color:white;text-align:left;font-size:small;
-}
-.table-bottom td{
-font-size:small;border:1px solid #ccc;
-}
+        #navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+        }
 
-.bottomsection{
-position:absolute;left:0px;
-background:#000;
-color:white;line-height:3em;
-text-align:center;
-height:50px;
-width:100%;
-font-size:small;
-padding:0;
-}
-</style>
+        #article1 {
+            background: white;
+            margin-top: 85px;
+            margin-left: 12px;
+            margin-right: 12px;
+            border: 1px solid white;
+            border-bottom: 3px solid #8e8e8e;
+        }
+
+        #article1-content,
+        #article2-content,
+        #images-content,
+        #last-article-content,
+        #last-section-content {
+            margin: 30px 20px;
+        }
+
+        #article2,
+        #images,
+        #last-article,
+        #last-section {
+            background: white;
+            margin-top: 20px;
+            margin-left: 12px;
+            margin-right: 12px;
+            border: 1px solid white;
+            border-bottom: 3px solid #8e8e8e;
+        }
+
+        .image {
+            height: 120px;
+            width: 120px;
+            border: #ccc solid 2px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 34px;
+        }
+
+        .image img {
+            width: 100px;
+        }
+
+        .image p {
+            font-size: small;
+            line-height: 0.8em;
+        }
+
+        .table-bottom {
+            width: 100%;
+        }
+
+        .table-bottom th {
+            background: #000;
+            color: white;
+            text-align: left;
+            font-size: small;
+        }
+
+        .table-bottom td {
+            font-size: small;
+            border: 1px solid #ccc;
+        }
+
+        .bottomsection {
+            position: absolute;
+            left: 0px;
+            background: #000;
+            color: white;
+            line-height: 3em;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+            font-size: small;
+            padding: 0;
+        }
+    </style>
 </head>
+
 <body style="background:#e0e0e0;">
 
-<div id="navigation">
-<image src="baidu_logo.png"/>
-<table class="top-links"><tbody><tr><td>
-<ul>
-  <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接一</a></li>
-  <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接二</a></li>
-  <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接三</a></li>
-  <li><a style="color:#ccc;" href="http://ife.baidu.com" title="百度前端技术学院">导航链接四</a></li>
-</ul>
-</td></tr></tbody></table>
-</div>
+    <div id="navigation">
+        <image src="baidu_logo.png" />
+        <table class="top-links">
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接一</a></li>
+                            <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接二</a></li>
+                            <li><a href="http://ife.baidu.com" title="百度前端技术学院">导航链接三</a></li>
+                            <li><a style="color:#ccc;" href="http://ife.baidu.com" title="百度前端技术学院">导航链接四</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<div id="article1">
-<div id="article1-content">
-<h2>文章一级标题</h2>
-<h3 style="color:#7B7B7B;">文章二级标题</h3>
-<p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
-<p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
-这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
-这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段
-落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-<img style="height:260px;width:280px;" src="Koala.jpg" alt="My image" title="My Image"/>
-<p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
-这是一个很长很长的段落，换行了<br/>
-这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p> 
-</div>
-</div>
+    <div id="article1">
+        <div id="article1-content">
+            <h2>文章一级标题</h2>
+            <h3 style="color:#7B7B7B;">文章二级标题</h3>
+            <p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
+            <p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段 落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+            <img style="height:260px;width:280px;" src="Koala.jpg" alt="My image" title="My Image" />
+            <p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落， 这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                <strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+        </div>
+    </div>
 
-<div id="article2">
-<div id="article2-content">
-<h2>另一篇文章一级标题</h2>
-<h3 style="color:#7B7B7B;">文章二级标题</h3>
-<p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
-<p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
-这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
-这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段
-落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-<img style="height:260px;width:280px;" src="Koala.jpg" alt="My image" title="My Image"/>
-<ul style="list-style:none;font-size:14px;line-height:1.8em;">
-<li>列表项目一</li>
-<li>列表项目二</li>
-<li>列表项目三</li>
-</ul>
-</div>
-</div>
+    <div id="article2">
+        <div id="article2-content">
+            <h2>另一篇文章一级标题</h2>
+            <h3 style="color:#7B7B7B;">文章二级标题</h3>
+            <p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
+            <p style="text-indent:2em;font-size:14px;line-height:1.8em;">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="http://ife.baidu.com" title="百度前端技术学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段 落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+            <img style="height:260px;width:280px;" src="Koala.jpg" alt="My image" title="My Image" />
+            <ul style="list-style:none;font-size:14px;line-height:1.8em;">
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+        </div>
+    </div>
 
-<div id="images">
-<div id="images-content">
-<h3>图片</h3>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-<div class="image">
-<p>好看的图片</p>
-<img src="Koala.jpg" alt="My image" title="My Image"/>
-</div>
-</div>
-</div>
+    <div id="images">
+        <div id="images-content">
+            <h3>图片</h3>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+            <div class="image">
+                <p>好看的图片</p>
+                <img src="Koala.jpg" alt="My image" title="My Image" />
+            </div>
+        </div>
+    </div>
 
-<div id="last-article">
-<div id="last-article-content">
-<h2>最后一篇文章一级标题</h2>
-<h3 style="color:#7B7B7B;">文章二级标题</h3>
-<p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
-<ol style="font-weight:bold;">
-<li>排名1</li>
-<li>排名2</li>
-<li>排名3</li>
-</ol>
-<table class="table-bottom" cellspacing="0px" style="border-top:1px solid #E0E0E0;border-left:1px solid #E0E0E0;border-right:1px solid #000;border-bottom:1px solid #000">
-<tbody>
-<caption style="text-align:left;font-size:14px;">下面是一个表格，给表格加了一个border=“1”好让你看出是一个表格,你们不用写html时不需要加</caption>
-<tr>
-<th>表头</th>
-<th style="border-left:1px solid white">表头</th>
-<th style="border-left:1px solid white">表头</th>
-</tr>
-<tr>
-<td>表内容单元格</td>
-<td>表内容单元格</td>
-<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
-</tr>
-<tr>
-<td>表内容单元格</td>
-<td>表内容单元格</td>
-<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
-</tr>
-<tr>
-<td>表内容单元格</td>
-<td>表内容单元格</td>
-<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
-</tr>
-<tr>
-<td>表内容单元格</td>
-<td>表内容单元格</td>
-<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
-</tr>
-<tr style="background:#ccc">
-<td>总计</td>
-<td colspan="2">1000</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+    <div id="last-article">
+        <div id="last-article-content">
+            <h2>最后一篇文章一级标题</h2>
+            <h3 style="color:#7B7B7B;">文章二级标题</h3>
+            <p style="font-size:small;color:#7B7B7B;">文章作者 文章发表时间</p>
+            <ol style="font-weight:bold;">
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <table class="table-bottom" cellspacing="0px" style="border-top:1px solid #E0E0E0;border-left:1px solid #E0E0E0;border-right:1px solid #000;border-bottom:1px solid #000">
+                <tbody>
+                    <caption style="text-align:left;font-size:14px;">下面是一个表格，给表格加了一个border=“1”好让你看出是一个表格,你们不用写html时不需要加</caption>
+                    <tr>
+                        <th>表头</th>
+                        <th style="border-left:1px solid white">表头</th>
+                        <th style="border-left:1px solid white">表头</th>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+                    </tr>
+                    <tr style="background:#ccc">
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-<div id="last-section">
-<div id="last-section-content">
-<h4 style="border-left:3px solid #ccc;text-indent:0.8em;padding-top:8px;padding-bottom:8px;">这里以后是一个侧栏，这是侧栏的标题</h4>
-<form>
-<p style="text-indent:22em;font-size:small;">请输入邮箱地址&nbsp;&nbsp;&nbsp;<input type="text" name="邮箱地址" value="这是一个文本输入框"/></p>
-<p style="text-indent:30em;font-size:small;color:#ccc;">邮箱地址请按要求格式输入</p>
-<p style="text-indent:24em;font-size:small;">请输入密码&nbsp;&nbsp;&nbsp;<input type="password" name="密码" value="这是一个文本输入框"/></p>
-<p style="text-indent:22em;font-size:small;">请重复输入密码&nbsp;&nbsp;&nbsp;<input type="password" name="密码" value="这是一个文本输入框"/></p>
-<p style="text-indent:30em;font-size:small;color:#ccc;">密码请为6-16位英文数字</p>
-<br/>
-<p style="text-indent:27em;font-size:small;">性别&nbsp;&nbsp;&nbsp;<input type="radio" value="man" name="radio sex" checked="checked"/>男<input type="radio" value="woman" name="radio sex"/>女</p>
-<p style="text-indent:27em;font-size:small;">城市&nbsp;&nbsp;&nbsp;<select><option value="北京" selected=“selected">北京</option><option value="上海">上海</option></select></p>
-<p style="text-indent:27em;font-size:small;">爱好&nbsp;&nbsp;&nbsp;<input type="checkbox" value="运动" name="hobby"/>运动<input type="checkbox" value="艺术" name="hobby"/>艺术<input type="checkbox" value="科学" name="hobby"/>科学 </p> 
-<p style="text-indent:25em;font-size:small;"><label>个人描述</label>&nbsp;&nbsp;&nbsp;<textarea style="vertical-align:top;height:100px;width:50%;">这是一个多行输入框，输入您的个人描述</textarea></p>
-<input type="submit" value="确认提交" style="height:40px;width:100%;background:blue;color:white;border-radius:10px;"/>
-</form>
-</div>
-</div>
+    <div id="last-section">
+        <div id="last-section-content">
+            <h4 style="border-left:3px solid #ccc;text-indent:0.8em;padding-top:8px;padding-bottom:8px;">这里以后是一个侧栏，这是侧栏的标题</h4>
+            <form>
+                <p style="text-indent:22em;font-size:small;">请输入邮箱地址&nbsp;&nbsp;&nbsp;<input type="text" name="邮箱地址" value="这是一个文本输入框" /></p>
+                <p style="text-indent:30em;font-size:small;color:#ccc;">邮箱地址请按要求格式输入</p>
+                <p style="text-indent:24em;font-size:small;">请输入密码&nbsp;&nbsp;&nbsp;<input type="password" name="密码" value="这是一个文本输入框" /></p>
+                <p style="text-indent:22em;font-size:small;">请重复输入密码&nbsp;&nbsp;&nbsp;<input type="password" name="密码" value="这是一个文本输入框" /></p>
+                <p style="text-indent:30em;font-size:small;color:#ccc;">密码请为6-16位英文数字</p>
+                <br/>
+                <p style="text-indent:27em;font-size:small;">性别&nbsp;&nbsp;&nbsp;<input type="radio" value="man" name="radio sex" checked="checked" />男<input type="radio" value="woman" name="radio sex" />女</p>
+                <p style="text-indent:27em;font-size:small;">城市&nbsp;&nbsp;&nbsp;<select><option value="北京" selected=“selected">北京</option><option value="上海">上海</option></select></p>
+                <p style="text-indent:27em;font-size:small;">爱好&nbsp;&nbsp;&nbsp;<input type="checkbox" value="运动" name="hobby" />运动<input type="checkbox" value="艺术" name="hobby" />艺术<input type="checkbox" value="科学" name="hobby" />科学 </p>
+                <p style="text-indent:25em;font-size:small;"><label>个人描述</label>&nbsp;&nbsp;&nbsp;<textarea style="vertical-align:top;height:100px;width:50%;">这是一个多行输入框，输入您的个人描述</textarea></p>
+                <input type="submit" value="确认提交" style="height:40px;width:100%;background:blue;color:white;border-radius:10px;" />
+            </form>
+        </div>
+    </div>
 
-<p class="bottomsection">
-版权所有@
-</p>
+    <p class="bottomsection">
+        版权所有@
+    </p>
 </body>
+
 </html>
