@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>task-1-6</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+        }
+
+        .blockwhole {
+            width: 980px;
+            height: 1386px;
+            position: relative;
+        }
+
+        .blocktopline {
+            position: relative;
+            width: 892px;
+            height: 61px;
+            top: 0;
+            border-bottom: 2px solid #938e8c;
+            margin: 0 auto;
+            font-size: 12px;
+            font-family: 黑体;
+            color: #d45d5c;
+        }
+
+        .bottomsec {
+            width: 898px;
+            border-top: 1px solid #938e8c;
+            margin: 0 auto;
+            height: 30px;
+            position: absolute;
+            bottom: 0px;
+            left: 43px;
+            text-align: right;
+            font-size: 12px;
+            font-family:黑体;
+            color:#d45d5c;
+        }
+
+        .topredblock {
+            width: 110px;
+            height: 61px;
+            background: #d45d5c;
+            font-size: 12px;
+            font-family: 黑体;
+            color: #ffffff;
+            text-indent: 2px;
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        .topdate {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 12px;
+            font-family: 黑体;
+            color: #d45d5c;
+        }
+
+        .text1 {
+            position: relative;
+            width: 892px;
+            height: 301px;
+            margin: 40px auto;
+        }
+
+        .text1-img {
+            width: 641px;
+            height: 301px;
+        }
+
+        .shadowleft {
+            position: absolute;
+            width: 191px;
+            height: 301px;
+            background: green;
+            opacity: 0.5;
+            bottom: 0;
+        }
+
+        .shadowright {
+            position: absolute;
+            width: 191px;
+            height: 301px;
+            background: red;
+            opacity: 0.5;
+            bottom: 0;
+            left: 450px;
+        }
+
+        .text1-p {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 203px;
+            height: 301px;
+            border-top: 2px solid #cc8091;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .text1-p-style1 {
+            font-size: 24px;
+            font-family: 微软雅黑;
+            color: #000000;
+            line-height: 40px;
+            text-decoration: underline;
+        }
+
+        .text1-p-style2 {
+            font-style: italic;
+            font-size: 12px;
+            font-family: 楷体;
+            color: #676767;
+            line-height: 10px;
+            word-spacing: 1px;
+        }
+
+        .text1-p-700 {
+            font-size: 116px;
+            font-family: 微软雅黑;
+            color: #75b86b;
+            font-style: italic;
+        }
+
+        .text1-p-32 {
+            display: inline-block;
+            font-size: 55px;
+            font-family: 微软雅黑;
+            color: #cc8091;
+        }
+
+        .text1-p-css {
+            display: inline-block;
+            font-size: 12px;
+            font-family: 微软雅黑;
+            color: #cc8091;
+            bottom: 0;
+        }
+
+        .text2 {
+            position: relative;
+            width: 892px;
+            height: 200px;
+            margin: 40px auto;
+        }
+
+        .what {
+            position: absolute;
+            display: inline-block;
+            width: 239px;
+            height: 200px;
+        }
+
+        .text2-whatqianduan {
+            font-size: 12px;
+            font-family: 宋体;
+            color: #767777;
+            line-height: 16px;
+        }
+
+        .when {
+            position: absolute;
+            display: inline-block;
+            width: 210px;
+            height: 200px;
+            left: 260px;
+        }
+
+        .text2-whenqianduan {
+            font-size: 12px;
+            font-family: 宋体;
+            color: #231815;
+            line-height: 16px;
+            opacity: 0.7;
+        }
+
+        .how {
+            position: absolute;
+            display: inline-block;
+            width: 210px;
+            height: 200px;
+            left: 496px;
+        }
+
+        .text2-howqianduan {
+            font-size: 12px;
+            font-family: 宋体;
+            color: #767777;
+            line-height: 2em;
+        }
+
+        .howbottom {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .text2-howwhat {
+            font-size: 12px;
+            font-family: 微软雅黑;
+            line-height: 18px;
+            opacity: 0.7;
+        }
+
+        .text3 {
+            display: inline-block;
+            width: 415px;
+            height: 623px;
+            margin-left: 44px;
+            overflow: hidden;
+        }
+
+        #the {
+            font-size: 72px;
+            color: #f5e327;
+            font-family: 黑体;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .text3>h1 {
+            font-size: 42px;
+            color: #11456b;
+            width: 100%;
+            font-family: 黑体;
+            font-weight: bold;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .text3>p {
+            font-size: 12px;
+        }
+
+        #qian::first-letter {
+            font-size: 70px;
+            color: #f5e327;
+            font-family: 微软雅黑;
+            float: left;
+            margin: 0 12px 0 0;
+        }
+
+        #qdjsly {
+            font-size: 33px;
+        }
+
+        #image3 {
+            width: 150px;
+            height: 200px;
+            float: right;
+            margin: 24px 0 12px 24px;
+        }
+
+        .text4 {
+            position: relative;
+            display: inline-block;
+            width: 458px;
+            height: 623px;
+            margin-left: 19px;
+        }
+
+        .text4-img {
+            position: absolute;
+            width: 458px;
+            height: 275px;
+        }
+
+        .text4-shadow {
+            position: absolute;
+            width: 458px;
+            height: 61px;
+            background: #000;
+            opacity: 0.5;
+            bottom: 0;
+        }
+
+        .qianduanjishu {
+            position: absolute;
+            width: 358px;
+            height: 44px;
+            left: 40px;
+            bottom: 8.5px;
+            border-left: 3px solid #72b16a;
+        }
+
+        .text4-bottomblock {
+            position: absolute;
+            width: 459px;
+            height: 318px;
+            background: #fff8d7;
+            bottom: 0;
+        }
+
+        .text4-list {
+            position: absolute;
+            height: 150px;
+            top: 20px;
+        }
+
+        .text4-redblock {
+            position: absolute;
+            width: 260px;
+            height: 160px;
+            background: #d45d5c;
+            bottom: 0;
+        }
+
+        .text4-queto {
+            position: absolute;
+            width: 184px;
+            height: 160px;
+            right: 0px;
+            bottom: 0;
+        }
+
+        q {
+            font-size: 14px;
+            color: #5a5b5b;
+            font-family: 黑体;
+            font-style: italic;
+            line-height: 16px;
+            position: relative;
+        }
+
+        q::after {
+            font-size: 72px;
+            color: #d45d5c;
+            position: absolute;
+            bottom: -24px;
+        }
+
+        q::before {
+            font-size: 72px;
+            color: #d45d5c;
+            position: relative;
+            left: -20px;
+            top: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blockwhole">
+        <div class="blocktopline">
+            <div class="topredblock">ife.baidu.com</div>
+            <div class="topdate">2016.03</div>
+        </div>
+        <div class="text1">
+            <div class="text1-img">
+                <img src="C:/Users/Public/Pictures/Sample Pictures/Penguins.jpg" width="641px" height="301px" />
+                <div class="shadowleft"></div>
+                <div class="shadowright"></div>
+            </div>
+            <div class="text1-p">
+                <p class="text1-p-style1"><span style="font-weight:bold;font-size:24px;">A</span>BOUT<br/>TECHNOLOGE</p>
+                <p class="text1-p-style2">About technologe about technologe about technologe</p>
+                <p class="text1-p-700">700</p>
+                <p class="text1-p-32">3.2</p>
+                <p class="text1-p-css"><span style="font-size:21px;">css</span><br/>cssssccsccscssc</p>
+            </div>
+        </div>
+        <div class="text2">
+            <div class="what">
+                <h1 style="font-size:16px;font-family:微软雅黑;font-weight:bold;color:#418c59;text-decoration:underline;">What</h1>
+                <p class="text2-whatqianduan">端前端前端端前前端前端前端前端端前端前端前端前端前端前端端前前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+            </div>
+            <div class="when">
+                <h1 style="font-size:16px;font-family:微软雅黑;font-weight:bold;color:#d2994f;text-decoration:underline;">When</h1>
+                <p class="text2-whenqianduan">端前端前端端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+            </div>
+            <div class="how">
+                <h1 style="font-size:16px;font-family:微软雅黑;font-weight:bold;color:#cc7680;text-decoration:underline;">How</h1>
+                <p class="text2-howqianduan">前端前端端前端前端<br/>前端前端前端前端前端前<br/>端前端前端端前</p>
+                <div class="howbottom">
+                    <p class="text2-howwhat">What--------<span style="color:#cd4a48;font-style:italic;">40%</span></p>
+                    <p class="text2-howwhat">What--------<span style="color:#cd4a48;font-style:italic;">30%</span></p>
+                    <p class="text2-howwhat">What--------<span style="color:#cd4a48;font-style:italic;">30%</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="text3">
+            <h1><span id="the">THE</span> TECHNOLOGE OF FRONT</br><span id="qdjsly">前端技术领域</span></h1>
+            <hr style="height:2px;border:none;border-top:2px double #11456b;" />
+            <p id="qian">前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端 前端前端前端前端
+            </p>
+            <img id="image3" src="Lighthouse.jpg" alt="好看的图片" />
+            <p style="text-indent:2em;">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+            </p>
+        </div>
+        <div class="text4">
+            <div class="text4-img">
+                <img src="Koala.jpg" width="458px" height="275px" />
+                <div class="text4-shadow"></div>
+                <div class="qianduanjishu"><span style="font-size:26px;font-family:微软雅黑;color:#ffffff;">&nbsp&nbsp前端技术</span><span style="font-size:12px;font-family:微软雅黑;color:#72b16a;letter-spacing:140%;font-style:italic;">&nbsp&nbsp前端技术前端技术</span></div>
+            </div>
+            <div class="text4-bottomblock">
+                <div class="text4-list">
+                    <ul style="font-size:16px;font-family:宋体;color:#5a5b5b;">
+                        <li style="text-indent:2em;display:inline-block;line-heightheight:20px;"><span style="font-size:1px;">▲&nbsp</span>前端前端前端前端前端前端</li>
+                        <p style="display:inline-block;font-size:12px;font-family:宋体;color:#5a5b5b;text-align:right;font-style:italic;">........................前端</p>
+                    </ul>
+                    <ul style="font-size:16px;font-family:宋体;color:#5a5b5b;">
+                        <li style="text-indent:2em;display:inline-block;line-height:20px;"><span style="font-size:1px;">▲&nbsp</span>前端前端前端前端</li>
+                        <p style="display:inline-block;font-size:12px;font-family:宋体;color:#5a5b5b;text-align:right;font-style:italic;">.................................前端前</p>
+                    </ul>
+                    <ul style="font-size:16px;font-family:宋体;color:#5a5b5b;">
+                        <li style="text-indent:2em;display:inline-block;line-height:20px;"><span style="font-size:1px;">▲&nbsp</span>前端前端前端前端前端前端前端</li>
+                        <p style="display:inline-block;font-size:12px;font-family:宋体;color:#5a5b5b;text-align:right;font-style:italic;">...................前端</p>
+                    </ul>
+                </div>
+                <div class="text4-redblock">
+                    <table>
+                        <tr>
+                            <td style="height:86px;border-right:2px solid #ffffff;font-size:110px;font-family:微软雅黑;color:#ffffff;">0</td>
+                            <td style="height:86px;text-align:left;"><span style="font-size:21px;font-family:黑体;color:#ffffff;line-height:24px;font-style:italic;">ONE&nbspTWO<br/>THREE&nbspFORE&nbspFIVE<br/></span><span style="font-size:12px;font-family:黑体;color:#ffffff;line-height:6px;">hello&nbspworld&nbsphello&nbspworld<br/>hello&nbspworld</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text4-queto">
+                    <q>hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello</q>
+                </div>
+            </div>
+        </div>
+        <div class="bottomsec">
+          ife.baidu.com
+        </div>
+    </div>
+
+</body>
+
+</html>
