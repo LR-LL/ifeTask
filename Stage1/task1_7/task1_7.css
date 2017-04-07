@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+}
+
+.nav {
+    position: relative;
+    height: 69px;
+}
+
+.nav>img {
+    margin-left: 4em;
+}
+
+.daohang {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    height: 69px;
+    right: 0;
+}
+
+.daohang li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    float: left;
+    margin-top: 0;
+    margin-left: 4em;
+    width: 4em;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.daohang li a {
+    text-decoration: none;
+    color: black;
+}
+
+.shouye {
+    border-bottom: 4px solid #ec4814;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.header>img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_text {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+
+.header_text>h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: normal;
+}
+
+.header_text>p {
+    font-size: 20px;
+    color: white;
+}
+
+.header_text>input {
+    background: #ec4814;
+    width: 350px;
+    height: 60px;
+    color: white;
+    margin-top: 60px;
+    font-size: 28px;
+    border: none;
+}
+
+.mainpoint {
+    width: 100%;
+    height: 200px;
+}
+
+.mainpoint>table {
+    width: 100%;
+    height: 100%;
+}
+
+.mainpoint table, tr td, th {
+    text-align: center;
+    padding-top: 0;
+}
+
+.mainpoint table td {
+    border-right: 2px solid #8c8585;
+    font-size: 14px;
+    color: #747875;
+}
+
+.yourUnknownNewWorld {
+    width: 100%;
+    background-color: #e8e8e3;
+    margin: 30px auto;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.yourUnknownNewWorldHead {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.yourUnknownNewWorldHead img {
+    margin-top: 80px;
+}
+
+.yourUnknownNewWorldHead h1 {
+    font-size: 50px;
+    color: #b9b7bb;
+    font-weight: normal;
+}
+
+.searchForActiviy {
+    background-image: url(./map.jpg);
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 50px;
+}
+
+.searchForActiviy h2, .searchForActiviy p {
+    display: inline;
+    color: white;
+    font-weight: normal;
+}
+
+.shortline {
+    display: inline-block;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+}
+
+.searchForActiviy>form {
+    margin-top: 50px;
+}
+
+.searchForActiviy>form>input {
+    width: 15%;
+    height: 30px;
+    border: none;
+    color: #b9b7bb display:inline-block;
+    margin-left: 25px;
+}
+
+.activities {
+    margin: 70px auto;
+    text-align: center;
+}
+
+.activity {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.activityImage {
+    background-color: white;
+    padding: 10px 4px;
+    border: 1px solid #a4a2a6;
+}
+
+.activityImage>img {
+    width: 210px;
+    height: 320px;
+}
+
+.activity h3 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.activity p {
+    color: #a4a2a6;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+.time_01wholesection {
+    width: 100%;
+    position: relative;
+}
+
+.TIMEsection {
+    background-image: url(./Lighthouse.jpg);
+    width: 66%;
+    height: 550px;
+    position: relative;
+}
+
+.TIMEsection h1, .TIMEsection p {
+    color: white;
+}
+
+.TIMEsection h1 {
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.TIMEsection p {
+    font-size: 20px;
+}
+
+.TIMEsectionText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.leftsanjiao {
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+}
+
+.leftsanjiao {
+    border-right: 30px solid white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.newWorld01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34%;
+}
+
+.newWorld01Text {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.newWorld01Text p {
+    line-height: 3em;
+    font-size: 14px;
+    color: #a4a2a6;
+    font-family: 宋体;
+    text-align: left;
+}
+
+.newWorld01Text input {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    width: 120px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border: 1px black solid;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    margin-right: 14px;
+    margin-top: 30px;
+}
+
+.newdayWholeSection {
+    width: 100%;
+    height: 550px;
+}
+
+.newday_redblock, .newday_whiteblock {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.newday_redblock {
+    background-color: #e05249;
+    color: white;
+}
+
+.newday_image {
+    background-image: url(./Koala.jpg);
+    width: 34%;
+    float: left;
+    height: 100%;
+}
+
+.rightsanjiao {
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+}
+
+.rightsanjiao {
+    border-left: 30px solid white;
+    margin-top: 50%;
+}
+
+.newday_blocktext {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+.newday_blocktext>input {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.bevolunteerWhole {
+    width: 100%;
+    position: relative;
+}
+
+.bevolunteerHeader {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.bevolunteerHeader h1, .bevolunteerHeader p {
+    display: inline-block;
+}
+
+.bevolunteerHeader h1 {
+    line-height: 1em;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bevolunteerHeader p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.bevolunteerContent {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.tiaokuanlist {
+    width: 20%;
+    margin-left: 15%;
+}
+
+.more {
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.xiasanjiao {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-top: 5px solid gray;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    right: 34px;
+    bottom: 0;
+}
+
+.xiasanjiaowhite {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 4px solid transparent;
+    border-top: 4px solid white;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    right: 34.5px;
+    bottom: 2px;
+}
+
+.tiaokuan a {
+    text-decoration: none;
+    display: inline-block;
+    color: gray;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.tiaokuan h2 {
+    font-size: 14px;
+    font-family: 宋体;
+    line-height: 4em;
+}
+
+.tiaokuan p {
+    font-size: 12px;
+    font-family: 宋体;
+    color: gray;
+    line-height: 2em;
+}
+
+.form {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    margin-top: 10px;
+}
+
+.info {
+    height: 30px;
+    width: 46%;
+    display: inline-block;
+    background-color: #e8e8e3;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    font-size: 12px;
+    font-family: 宋体;
+    padding-top: 10px;
+}
+
+.form input {
+    border: none;
+    background-color: inherit;
+}
+
+.description, textarea {
+    border: none;
+    background-color: #e8e8e3;
+    margin-left: 4%;
+    font-size: 12px;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+.submit {
+    width: 96%;
+    height: 30px;
+    margin-left: 4%;
+    margin-top: 2%;
+    background-color: #e8e8e3;
+    padding-top: 10px;
+}
+
+.submit>input {
+    width: 100%;
+}
+
+.footerwhole {
+    width: 100%;
+    height: 415px;
+    background-color: #32383d;
+    margin-top: 155px;
+    position: relative;
+}
+
+.footercontent {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+.footercontent h1{
+  font-size: 20px;
+  line-height: 2em;
+  font-weight: normal;
+}
+.footercontent p{
+  font-size: 12px;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+.footercontent input[type=email]{
+  height: 36px;
+  width: 420px;
+  color: gray;
+  border: none;
+  margin-left:32%;
+}
+.footercontent input[type=submit]{
+  height: 36px;
+  width: 80px;
+  background-color: gray;
+  color: white;
+  border: none;
+  letter-spacing: 0.5em;
+}
+.footercontent input{
+  margin-bottom: 20px;
+  float: left;
+}
+.bottomsec {
+    font-size: 12px;
+    color: white;
+    background-color: #202c30;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+}
+.bottomsec p{
+  position: absolute;
+  left:100px;
+  top:25px;
+}
+.bottomsec a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  right: 50px;
+  top:25px;
+}
