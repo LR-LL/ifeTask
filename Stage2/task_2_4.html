@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task2_4</title>
+</head>
+
+<body>
+    <input type="text" id="input" name="输入值">
+    <button type="button" id="leftIn" name="button" onclick="lI()" value="左侧入">左侧入</button>
+    <button type="button" id="leftOut" name="button" onclick="lO()" value="左侧出">左侧出</button> &nbsp;&nbsp;
+    <button type="button" id="rightIn" name="button" onclick="rI()" value="右侧入">右侧入</button>
+    <button type="button" id="rightOut" name="button" onclick="rO()" value="右侧出">右侧出</button>
+    <ul id="queue">
+
+    </ul>
+</body>
+<script type="text/javascript">
+    function lI() {
+        var userInput = document.getElementById('input');
+        var data = userInput.value;
+        var queue = document.getElementById('queue');
+        queue.style.listStyle = "none";
+        var li = document.createElement('li');
+        li.innerHTML = data;
+        li.style.backgroundColor = 'red';
+        li.style.display = 'inline';
+        li.style.margin='10px';
+        li.style.padding='10px';
+        if (queue.children.length != 0) {
+            queue.insertBefore(li, queue.children[0]);
+        } else {
+            queue.appendChild(li);
+        }
+    }
+
+    function lO() {
+        var queue = document.getElementById('queue');
+        var list = queue.getElementsByTagName('li');
+        var length = list.length;
+        var removed = queue.removeChild(queue.children[0]);
+        alert(removed.innerHTML);
+    }
+    function rI(){
+      var userInput = document.getElementById('input');
+      var data = userInput.value;
+      var queue = document.getElementById('queue');
+      queue.style.listStyle = "none";
+      var li = document.createElement('li');
+      li.innerHTML = data;
+      li.style.backgroundColor = 'red';
+      li.style.display = 'inline';
+      li.style.margin='10px';
+      li.style.padding='10px';
+      queue.appendChild(li);
+    }
+    function rO(){
+      var queue = document.getElementById('queue');
+      var list = queue.getElementsByTagName('li');
+      var length = list.length;
+      var removed = queue.removeChild(queue.children[length - 1]);
+      alert(removed.innerHTML);
+    }
+</script>
+
+</html>
