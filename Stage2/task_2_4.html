@@ -69,7 +69,8 @@
       alert(removed.innerHTML);
     }
     function remove(o){
-      o.style.display="none";
+      var parent=o.parentElement;//获取o的父节点
+      parent.removeChild(o);//利用父节点将自己删除
     }
 </script>
 
