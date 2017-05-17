@@ -30,6 +30,9 @@ function lI() {
     }
     queue.style.listStyle = "none";
     var li = document.createElement('li');
+    var text = document.createElement('p');
+    text.innerHTML = data;
+    text.style.display = 'none';
     //li.innerHTML = data;
     li.style.backgroundColor = 'red';
     //li.style.color = 'white';
@@ -38,6 +41,7 @@ function lI() {
     li.style.padding = '10px';
     li.style.height = data + 'px';
     li.style.width = '10px';
+    li.appendChild(text);
     li.setAttribute("onclick", "remove(this)");
     if (queue.children.length != 0) {
         queue.insertBefore(li, queue.children[0]);
@@ -67,6 +71,9 @@ function rI() {
     }
     queue.style.listStyle = "none";
     var li = document.createElement('li');
+    var text = document.createElement('p');
+    text.innerHTML = data;
+    text.style.display = 'none';
     //sli.innerHTML = data;
     li.style.backgroundColor = 'red';
     //li.style.color = 'transparent';
@@ -75,6 +82,7 @@ function rI() {
     li.style.padding = '10px';
     li.style.height = data + 'px';
     li.style.width = '10px';
+    li.appendChild(text);
     li.setAttribute("onclick", "remove(this)");
     queue.appendChild(li);
 }
