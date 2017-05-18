@@ -1,0 +1,20 @@
+textarea{
+  vertical-align: middle;
+}
+ul{
+  list-style: none;
+}
+.queueLi{
+  background-color: red;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.highLight{
+  background-color: #4DFFFF;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
