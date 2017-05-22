@@ -1,0 +1,29 @@
+div{
+  border: 1px black solid;
+  box-sizing: border-box;
+  /*margin: 10px auto;*/
+  margin: 10px 2px;
+  background-color: white;
+}
+#rootNode{
+  width: 600px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#node1_left,#node1_right{
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.node2_left,.node2_right{
+  width: 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.node3_left,.node3_right{
+  width: 57.5px;
+}
