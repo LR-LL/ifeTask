@@ -73,6 +73,9 @@ search.onclick = function() {
 }; //实现点击文本框后全选其内容
 
 preOrderBtn.onclick = function() {
+    for (var j = 0; j < q.length; j++) {
+        resetNode(q[j]);
+    } //重新点击按钮时重置所有状态
     var count = 0;
     q = [];
     preorderTravesal(root);
@@ -95,6 +98,9 @@ preOrderBtn.onclick = function() {
 };
 
 posteriorBtn.onclick = function() {
+    for (var j = 0; j < q.length; j++) {
+        resetNode(q[j]);
+    } //重新点击按钮时重置所有状态
     var count = 0;
     q = [];
     posteriorTraversal(root);
@@ -117,6 +123,9 @@ posteriorBtn.onclick = function() {
 };
 
 floorBtn.onclick = function() {
+    for (var j = 0; j < q.length; j++) {
+        resetNode(q[j]);
+    } //重新点击按钮时重置所有状态
     var count = 0;
     q = [];
     floorTraversal(root);
