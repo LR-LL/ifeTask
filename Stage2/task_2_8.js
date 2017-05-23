@@ -5,6 +5,7 @@ function showNode(node) {
 //遍历完的重置
 function resetNode(node) {
     node.style.backgroundColor = 'white';
+    node.style.color = 'black';
 }
 //查询到对应内容高亮效果
 function highLight(node) {
