@@ -112,6 +112,9 @@ function selectedShow(e){
     preSelected.className='initial';
     preSelected.style.backgroundColor='white';//不用resetNode的原因是需要改变class属性来取消标记
   }
+  for (var i = 0; i < nodeList.length; i++) {
+    resetNode(nodeList[i]);//重置所有节点回到初始状态
+  }
   e.stopPropagation();//阻止事件冒泡至父元素
   this.setAttribute('class','selected');
   this.style.backgroundColor='pink';
