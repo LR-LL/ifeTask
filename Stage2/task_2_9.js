@@ -1,6 +1,6 @@
 //遍历效果
 function showNode(node) {
-    node.style.backgroundColor = '#7AFEC6';//通过此方法添加的样式是内联样式，优先级比较高，可能导致后面通过class设置的样式无法显示
+    node.style.backgroundColor = '#7AFEC6'; //通过此方法添加的样式是内联样式，优先级比较高，可能导致后面通过class设置的样式无法显示
 }
 //遍历完的重置
 function resetNode(node) {
@@ -38,7 +38,7 @@ function floorTraversal(node) {
         var t = queuePre.shift();
         for (var j = 0; j < t.children.length; j++) {
             if (t.children[j] !=
-               null) {
+                null) {
                 queuePre.push(t.children[j]);
             }
         }
@@ -68,60 +68,60 @@ var preOrderBtn = document.getElementById('preorder');
 var posteriorBtn = document.getElementById('posterior');
 var floorBtn = document.getElementById('floor');
 var search = document.getElementById('userInput');
-var nodeList=document.getElementsByTagName('div');
-var removeBtn=document.getElementById('remove');
-var appendBtn=document.getElementById('append');
+var nodeList = document.getElementsByTagName('div');
+var removeBtn = document.getElementById('remove');
+var appendBtn = document.getElementById('append');
 //实现添加节点效果
-appendBtn.onclick=function(){
-  var current=document.getElementsByClassName('selected')[0];
-  if (current) {
-    var text=search.value;
-    if (text) {
-      var node=document.createElement('div');
-      node.innerHTML=text;
-      node.setAttribute('class','selected');
-      current.appendChild(node);
-      current.className='initial';
-      current.style.backgroundColor='white';
-      node.onclick=selectedShow;//加入选中效果
-    }else {
-      alert('Please enter your new content !');
+appendBtn.onclick = function() {
+    var current = document.getElementsByClassName('selected')[0];
+    if (current) {
+        var text = search.value;
+        if (text) {
+            var node = document.createElement('div');
+            node.innerHTML = text;
+            node.setAttribute('class', 'selected');
+            current.appendChild(node);
+            current.className = 'initial';
+            current.style.backgroundColor = 'white';
+            node.onclick = selectedShow; //加入选中效果
+        } else {
+            alert('Please enter your new content !');
+        }
+    } else {
+        alert('Please select a parentElement !');
     }
-  }else {
-    alert('Please select a parentElement !');
-  }
 }
 //实现删除效果
-function remove(node){
-  var parent=node.parentElement;
-  parent.removeChild(node);
+function remove(node) {
+    var parent = node.parentElement;
+    parent.removeChild(node);
 }
-removeBtn.onclick=function(){
-  var current=document.getElementsByClassName('selected')[0];
-  if (current) {
-    remove(current);
-  }else {
-    alert('You have not selected any content !');
-  }
+removeBtn.onclick = function() {
+    var current = document.getElementsByClassName('selected')[0];
+    if (current) {
+        remove(current);
+    } else {
+        alert('You have not selected any content !');
+    }
 }
 //实现点击选中内容显示效果
-function selectedShow(e){
-  var preSelected=document.getElementsByClassName('selected')[0];
-  if (preSelected) {
-    //preSelected.setAttribute('class','inital');//两种更新元素class属性的方法
-    preSelected.className='initial';
-    preSelected.style.backgroundColor='white';//不用resetNode的原因是需要改变class属性来取消标记
-  }
-  for (var i = 0; i < nodeList.length; i++) {
-    resetNode(nodeList[i]);//重置所有节点回到初始状态
-  }
-  e.stopPropagation();//阻止事件冒泡至父元素
-  this.setAttribute('class','selected');
-  this.style.backgroundColor='pink';
-  this.style.color='black';
+function selectedShow(e) {
+    var preSelected = document.getElementsByClassName('selected')[0];
+    if (preSelected) {
+        //preSelected.setAttribute('class','inital');//两种更新元素class属性的方法
+        preSelected.className = 'initial';
+        preSelected.style.backgroundColor = 'white'; //不用resetNode的原因是需要改变class属性来取消标记
+    }
+    for (var i = 0; i < nodeList.length; i++) {
+        resetNode(nodeList[i]); //重置所有节点回到初始状态
+    }
+    e.stopPropagation(); //阻止事件冒泡至父元素
+    this.setAttribute('class', 'selected');
+    this.style.backgroundColor = 'pink';
+    this.style.color = 'black';
 }
 for (var i = 0; i < nodeList.length; i++) {
-  nodeList[i].onclick=selectedShow;
+    nodeList[i].onclick = selectedShow;
 }
 //实现点击文本框后全选其内容
 search.onclick = function() {
