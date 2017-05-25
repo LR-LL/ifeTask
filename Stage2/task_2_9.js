@@ -160,6 +160,7 @@ posteriorBtn.onclick = function() {
     } //重新点击按钮时重置所有状态
     var count = 0;
     q = [];
+
     posteriorTraversal(root);
     for (var i = 0; i < q.length + 1; i++) {
         var t = setTimeout(function(i) {
