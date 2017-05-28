@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/task_3_3.css">
+  <title>task_3_3</title>
+</head>
+<body>
+  <input id="student" type="radio" name="性质" value="在校生"><label for="student">在校生</label>
+  <input id="nonstudent" type="radio" name="性质" walue="非在校生"><label for="nonstudent">非在校生</label>
+  <form id="school" class="initHidden">
+    <label for="location">学校</label>
+    <select id="location" name="学校地点" class="initHidden">
+      <option value="北京">北京</option>
+      <option value="上海">上海</option>
+    </select>
+    <select id="beijing" name="学校" class="initHidden">
+      <option value="清华大学">清华大学</option>
+      <option value="北京大学">北京大学</option>
+    </select>
+    <select id="shanghai" class="initHidden" name="学校">
+      <option value="复旦大学">复旦大学</option>
+      <option value="同济大学">同济大学</option>
+    </select>
+  </form>
+  <form id="company" class="initHidden">
+    <label for="comInfo">就业单位</label>
+    <input id="comInfo" type="text">
+  </form>
+
+  <script src="scripts/task_3_3.js" charset="utf-8"></script>
+</body>
+
+</html>
