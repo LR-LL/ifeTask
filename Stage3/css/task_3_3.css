@@ -1,32 +1,61 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-input{
-    -webkit-appearance:none;
+
+.whole {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+input {
+    -webkit-appearance: none;
     height: 13px;
     width: 13px;
     background-color: white;
     box-shadow: 0 0 1px grey;
     border-radius: 10px;
-    outline: none;/*去掉outline的影响*/
+    outline: none;
+    /*去掉outline的影响*/
     margin-left: 20px;
 }
-select{
-  margin-left: 20px;
+
+select {
+    margin-left: 20px;
+    width: 150px;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px grey;
 }
-input:checked{
+
+input:checked {
     /*未重新设置宽高，默认与未选中前的宽高相同，以及圆角样式也相同，仅改变以下写出的样式*/
-    background-color: white;/*选中后实心圆点的背景色*/
-    border: 4px solid #3197ff;/*选中后内层圆的边框色，以此可达到遮盖外层圆的背景色的效果*/
-    box-shadow: 0 0 1px grey;/*选中后外层圆边框的shadow*/
+    background-color: white;
+    /*选中后实心圆点的背景色*/
+    border: 4px solid #3197ff;
+    /*选中后内层圆的边框色，以此可达到遮盖外层圆的背景色的效果*/
+    box-shadow: 0 0 1px grey;
+    /*选中后外层圆边框的shadow*/
 }
-.initHidden{
-  display: none;
+
+form {
+    margin-top: 20px;
 }
-#comInfo{
-  width: 200px;
-  height: 20px;
-  border-radius: 3px;
+
+.universityList {
+    width: 350px;
+}
+
+.initHidden {
+    display: none;
+}
+
+#comInfo {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
 }
