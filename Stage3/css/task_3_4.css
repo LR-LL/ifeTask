@@ -90,4 +90,27 @@
 .tr .bottomDirec {
     background-color: red;
     border-bottom: 8px solid blue;
+    text-align: left;
+}
+
+.hintArea {
+    width: 300px;
+    margin: 40px auto;
+    font-size: 16px;
+    font-family: 黑体;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #e1e1e1;
+}
+
+.order {
+    margin-left: 30px;
+}
+
+.orderCSS {
+    font-weight: bold;
 }
