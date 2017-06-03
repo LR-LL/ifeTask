@@ -128,9 +128,9 @@ carryOutBtn.onclick = function() {
     }
     else{
       if (!order) {
-        alert('指令不能为空!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+        alert('指令不能为空!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。\n不区分大小写但注意空格');
       }else {
-        alert('指令格式错误!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+        alert('指令格式错误!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。\n不区分大小写但注意空格');
       }
     }
 }
