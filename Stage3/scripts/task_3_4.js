@@ -78,7 +78,7 @@ carryOutBtn.onclick = function() {
             }
         }
     }
-    if (order == 'tun lef') {
+    else if (order == 'tun lef') {
         count--;
         if ((count + 4 * 1000) % 4 == 0) {
             var rightDirec = document.getElementsByClassName('rightDirec')[0]; //根据之前的状态找到节点
@@ -94,7 +94,7 @@ carryOutBtn.onclick = function() {
             initial.className = 'td leftDirec';
         }
     }
-    if (order == 'tun rig') {
+    else if (order == 'tun rig') {
         count++;
         if ((count + 4 * 1000) % 4 == 0) {
             var leftDirec = document.getElementsByClassName('leftDirec')[0];
@@ -110,7 +110,7 @@ carryOutBtn.onclick = function() {
             bottomDirec.className = 'td leftDirec';
         }
     }
-    if (order == 'tun bac') {
+    else if (order == 'tun bac') {
         count += 2;
         if ((count + 4 * 1000) % 4 == 0) {
             var bottomDirec = document.getElementsByClassName('bottomDirec')[0];
@@ -125,5 +125,12 @@ carryOutBtn.onclick = function() {
             var rightDirec = document.getElementsByClassName('rightDirec')[0];
             rightDirec.className = 'td leftDirec';
         }
+    }
+    else{
+      if (!order) {
+        alert('指令不能为空!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+      }else {
+        alert('指令格式错误!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+      }
     }
 }
