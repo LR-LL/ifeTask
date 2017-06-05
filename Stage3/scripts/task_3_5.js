@@ -401,9 +401,9 @@ carryOutBtn.onclick = function() {
         }
     } else {
         if (!order) {
-            alert('指令不能为空!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+            alert('指令不能为空!\n请输入指令tra lef / tra top / tra rig / tra bot / mov lef / mov top / mov rig / mov bot。');
         } else {
-            alert('指令格式错误!\n请输入指令“go”（前进）、“tun lef”（左转）、“tun rig”（右转）、“tun bac”（向后转）。');
+            alert('指令格式错误!\n请输入指令tra lef / tra top / tra rig / tra bot / mov lef / mov top / mov rig / mov bot。');
         }
     }
 }
