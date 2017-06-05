@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task_3_4-2 听指令的小方块（二）</title>
+    <link rel="stylesheet" href="css/task_3_4-2.css">
+</head>
+
+<body>
+    <div id="whole" class="table">
+        <div class="tr firstrow">
+            <div class="td firstcol"></div>
+            <div class="td">1</div>
+            <div class="td">2</div>
+            <div class="td">3</div>
+            <div class="td">4</div>
+            <div class="td">5</div>
+            <div class="td">6</div>
+            <div class="td">7</div>
+            <div class="td">8</div>
+            <div class="td">9</div>
+            <div class="td lastcol">10</div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">1</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">2</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">3</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">4</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">5</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td initial"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">6</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">7</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">8</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">9</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr  lastrow">
+            <div class="td firstcol">10</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+    </div>
+    <div class="orderArea">
+        <input id="userOrder" type="text" placeholder="输入指令go / tun lef / tun rig / tun bac，不用区分大小写但注意空格">
+        <input id="carryOut" type="button" value="执行">
+    </div>
+    <div class="hintArea">
+        <h3>相对于task_3_4增加了移动旋转的动画效果</h3>
+        <br>
+        <p>在输入框内允许输入如下指令（可不区分大小写），按下按钮后，使得正方形做相应动作，其中蓝色条面表示正面:</p>
+        <div class="order">
+            <ul>
+                <li><span class="orderCSS">GO：</span>向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+                <li><span class="orderCSS">TUN LEF：</span>向左转（逆时针旋转90度）</li>
+                <li><span class="orderCSS">TUN RIG：</span>向右转（顺时针旋转90度）</li>
+                <li><span class="orderCSS">TUN BAC：</span>向右转（旋转180度）</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts/task_3_4-2.js" charset="utf-8"></script>
+</body>
+
+</html>
