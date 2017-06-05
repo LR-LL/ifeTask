@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task_3_5 听指令的小方块（二）</title>
+    <link rel="stylesheet" href="css/task_3_5.css">
+</head>
+
+<body>
+    <div id="whole" class="table">
+        <div class="tr firstrow">
+            <div class="td firstcol"></div>
+            <div class="td">1</div>
+            <div class="td">2</div>
+            <div class="td">3</div>
+            <div class="td">4</div>
+            <div class="td">5</div>
+            <div class="td">6</div>
+            <div class="td">7</div>
+            <div class="td">8</div>
+            <div class="td">9</div>
+            <div class="td lastcol">10</div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">1</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">2</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">3</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">4</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">5</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td initial"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">6</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">7</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">8</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr">
+            <div class="td firstcol">9</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+        <div class="tr  lastrow">
+            <div class="td firstcol">10</div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td"></div>
+            <div class="td lastcol"></div>
+        </div>
+    </div>
+    <div class="orderArea">
+        <input id="userOrder" type="text" placeholder="输入指令go / tun lef / tun rig / tun bac，不用区分大小写但注意空格">
+        <input id="carryOut" type="button" value="执行">
+    </div>
+    <div class="hintArea">
+        <p>在输入框内允许输入如下指令（可不区分大小写），按下按钮后，使得正方形做相应动作，其中蓝色条面表示正面:</p>
+        <div class="order">
+            <ul>
+                <li><span class="orderCSS">TRA LEF：</span>向屏幕的左侧移动一格，方向不变</li>
+                <li><span class="orderCSS">TRA TOP：</span>向屏幕的上面移动一格，方向不变</li>
+                <li><span class="orderCSS">TRA RIG：</span>向屏幕的右侧移动一格，方向不变</li>
+                <li><span class="orderCSS">TRA BOT：</span>向屏幕的下面移动一格，方向不变</li>
+                <li><span class="orderCSS">MOV LEF：</span>方向转向屏幕左侧，并向屏幕的左侧移动一格</li>
+                <li><span class="orderCSS">MOV TOP：</span>方向转向屏幕上面，并向屏幕的上面移动一格</li>
+                <li><span class="orderCSS">MOV RIG：</span>方向转向屏幕右侧，并向屏幕的右侧移动一格</li>
+                <li><span class="orderCSS">MOV BOT：</span>方向转向屏幕下面，并向屏幕的下面移动一格</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts/task_3_5.js" charset="utf-8"></script>
+</body>
+
+</html>

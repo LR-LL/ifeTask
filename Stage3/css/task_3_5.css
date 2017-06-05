@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    display: table;
+    margin: 20px auto;
+}
+
+.tr {
+    display: table-row;
+}
+
+.td {
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    line-height: 40px;
+}
+
+.firstrow .td {
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom: 1px solid black;
+}
+
+.firstrow .firstcol {
+    border: none;
+}
+
+.firstcol {
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-right: 1px solid black;
+}
+
+.lastrow .td {
+    border-bottom: 1px solid black;
+}
+
+.lastrow .firstcol {
+    border-bottom: none;
+}
+
+.lastcol {
+    border-right: 1px solid black;
+}
+
+.orderArea {
+    text-align: center;
+}
+
+#userOrder {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+#carryOut {
+    border: 0px;
+    height: 30px;
+    width: 40px;
+    background-color: #e1e1e1;
+    vertical-align: middle;
+}
+
+.tr .initial {
+    background-color: red;
+    border-top: 8px solid blue;
+    position: relative;
+}
+
+.tr .leftDirec {
+    background-color: red;
+    border-left: 8px solid blue;
+    position: relative;
+}
+
+.tr .rightDirec {
+    background-color: red;
+    border-right: 8px solid blue;
+    position: relative;
+}
+
+.tr .bottomDirec {
+    background-color: red;
+    border-bottom: 8px solid blue;
+    text-align: left;
+    position: relative;
+}
+
+@keyframes traLef {
+    0% {
+        left: 40px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes traRig {
+    0% {
+        right: 40px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes traTop {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes traBot {
+    0% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes tunLef03 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunLef13 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunLef23 {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunRig01 {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunRig21 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunRig31 {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunTop10 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunTop20 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunTop30 {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunBot02 {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunBot12 {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tunBot32 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes goUp {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes goRig {
+    0% {
+        right: 40px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes goLef {
+    0% {
+        left: 40px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes goDown {
+    0% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.hintArea {
+    width: 300px;
+    margin: 40px auto;
+    font-size: 16px;
+    font-family: 黑体;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #e1e1e1;
+}
+
+.order {
+    margin-left: 30px;
+}
+
+.orderCSS {
+    font-weight: bold;
+}
