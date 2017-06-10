@@ -1,0 +1,1 @@
+Images of tasks in BaiDuNuoMi
