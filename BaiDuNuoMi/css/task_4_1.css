@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h4{
+  text-align: center;
+  margin: 30px auto;
+}
+
+.background {
+    margin: 30px auto;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+.content {
+    width: 300px;
+    height: 180px;
+    border: 0 solid transparent;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border 2s;
+}
+
+.background:hover img {
+    -webkit-filter: blur(3px);
+}
+
+.background:hover .content {
+    width: 300px;
+    height: 180px;
+    border: 5px solid white;
+    text-align: center;
+    line-height: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #d618e0 0%, #6cced1 10%, #d618e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+@keyframes gradient {
+    0% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 10%, #d618e0 100%);
+        -webkit-background-clip: text;
+        border-top-color: linear-gradient(to right, white 0%, transparent 100%);
+    }
+    10% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 20%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    20% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 30%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    30% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 40%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    40% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 50%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    50% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 60%, #d618e0 100%);
+        -webkit-background-clip: text;
+        border-top-color: linear-gradient(to right, white 0%, white 50%, transparent 100%);
+    }
+    60% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 70%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    70% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 80%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    80% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 90%, #d618e0 100%);
+        -webkit-background-clip: text;
+    }
+    90% {
+        background: linear-gradient(to right, #6cced1 0%, #d618e0 70%, #6cced1 100%);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: linear-gradient(to right, #d618e0 0%, #6cced1 10%, #d618e0 100%);
+        -webkit-background-clip: text;
+        border-top-color: linear-gradient(to right, white 0%, white 100%);
+    }
+}
