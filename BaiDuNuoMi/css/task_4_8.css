@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.area {
+    width: 1440px;
+    height: 800px;
+    text-align: center;
+    background: linear-gradient(to bottom right,#de48a2,#8ccd42);
+    color: #09f4de;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    position: relative;
+}
+
+.meanu {
+    list-style: none;
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    border: 1px solid gray;
+    background: white;
+    border-radius: 8px;
+}
+
+.item {
+    color: black;
+    font-size: 16px;
+}
+
+.item:hover {
+    background: #99e6e1;
+    cursor: pointer;
+}
