@@ -21,9 +21,10 @@
     width: 150px;
     height: 70px;
     position: absolute;
-    border: 1px solid gray;
-    background: white;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
     border-radius: 8px;
+    box-shadow: 0 0 2px #eeeeee;
 }
 
 .item {
