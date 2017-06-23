@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>第一个Echarts示例</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一个Echarts示例</title>
 </head>
+
 <body>
-  <div id="main" style="width:600px;height:400px;"></div>
-  <script src="scripts/echarts.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    var myEchart=echarts.init(document.getElementById('main'));
-    var option={
-      title:{
-        text:'Echarts 入门示例'
-      },
-      tooltip:{},
-      legend:{
-        data:['收入','支出']
-      },
-      xAxis:{
-        data:["1月","2月","3月","4月","5月","6月"]
-      },
-      yAxis:{
-        name:'金额(万元)',
-        type:'value'
-      },
-      series:[{
-        name:'收入',
-        type:'line',
-        data:[450, 600, 800, 780, 900, 500]
-      },
-      {
-        name:'支出',
-        type:'bar',
-        data:[300, 400, 350, 500, 100, 200]
-      }]
-    };
-    myEchart.setOption(option);
-  </script>
+    <div id="main" style="width:600px;height:400px;"></div>
+    <script src="scripts/echarts.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var myEchart = echarts.init(document.getElementById('main'));
+        var option = {
+            title: {
+                text: 'Echarts 入门示例'
+            },
+            tooltip: {
+                show: true,
+                trigger: 'axis',
+                axisPointer: {
+                    show: true,
+                    type: 'cross',
+                }
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: 'none'
+                    },
+                    dataView: {
+                        readOnly: false
+                    },
+                    magicType: {
+                        type: ['line', 'bar']
+                    },
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            legend: {
+                data: ['收入', '支出']
+            },
+            xAxis: {
+                data: ["1月", "2月", "3月", "4月", "5月", "6月"]
+            },
+            yAxis: {
+                name: '金额(万元)',
+                type: 'value'
+            },
+            series: [{
+                    name: '收入',
+                    type: 'line',
+                    data: [450, 600, 800, 780, 900, 500]
+                },
+                {
+                    name: '支出',
+                    type: 'bar',
+                    data: [300, 400, 350, 500, 100, 200]
+                }
+            ]
+        };
+        myEchart.setOption(option);
+    </script>
 </body>
+
 </html>
