@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义统计图表</title>
+</head>
+
+<body>
+    <div id="main" style="width:600px;height:400px;"></div>
+    <script src="scripts/echarts.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var myEchart = echarts.init(document.getElementById('main'));
+        var option = {
+            backgroundColor: '#d7e4eb',//设置整个统计图背景颜色
+            title: {
+                text: 'What are my income and expenses?',
+                textStyle: {
+                    color: 'rgb(116, 106, 110)',
+                    fontFamily: '微软雅黑',
+                    fontSize: 24
+                },
+                subtext:'Only statistics for nearly six months',
+                subtextStyle:{
+                  color: 'rgb(116, 106, 110)',
+                  fontFamily: '微软雅黑',
+                  fontSize: 20
+                },
+                left:45
+            },
+            tooltip: {
+                show: true,
+                trigger: 'axis',
+                axisPointer: {
+                    show: true,
+                    type: 'cross',
+                }
+            },
+            // toolbox: {
+            //     show: true,
+            //     feature: {
+            //         dataZoom: {
+            //             yAxisIndex: 'none'
+            //         },
+            //         dataView: {
+            //             readOnly: false
+            //         },
+            //         magicType: {
+            //             type: ['line', 'bar']
+            //         },
+            //         restore: {},
+            //         saveAsImage: {}
+            //     }
+            // },
+            legend: {
+                data: ['收入', '支出'],
+                top: 70,
+                left: 45
+            },
+            grid: {
+                show: true,
+                top: 100,
+                left:45
+                // backgroundColor:'rgb(113, 167, 186)'//颜色设置成功的前提是设置show:true
+            },
+            xAxis: [{
+                data: ["1月", "2月", "3月", "4月", "5月", "6月"],
+                axisTick: {
+                    show: false,
+                    alignWithLabel: true
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#d2858e',
+                        width: 2
+                    }
+                },
+                axisLabel:{
+                  textStyle:{
+                    color:'#707d84',
+                    fontSize:14,
+                    fontFamily:'微软雅黑'
+                  }
+                }
+            },{
+              position:'bottom',
+              axisTick: {
+                  show: true
+              },
+              axisLine: {
+                  lineStyle: {
+                      color: '#636b6e',
+                      width: 1
+                  }
+              }
+            }],
+            yAxis: [{
+                name: '金额(万元)',
+                type: 'value',
+                position: 'right',
+                inverse: true,
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        width: 2,
+                        color: ['white']//颜色设置成功的前提是设置show:true
+                    }
+                }
+            },{
+              inverse:false,
+              axisLine: {
+                  show:false
+              }
+            }],
+            series: [{
+                    name: '收入',
+                    type: 'bar',
+                    data: [450, 600, 800, 780, 900, 500]
+                },
+                {
+                    name: '支出',
+                    type: 'bar',
+                    data: [300, 400, 350, 500, 100, 200]
+                }
+            ]
+        };
+        myEchart.setOption(option);
+    </script>
+</body>
+
+</html>
